@@ -8,6 +8,11 @@ API_KEY = os.getenv("HTML2PDF_API_KEY", "")
 
 app = FastAPI(title="Megyk HTML → PDF Service")
 
+@app.get("/")
+async def healthcheck():
+    return {"status": "ok", "service": "html2pdf"}
+
+
 @app.post("/html-to-pdf")
 async def html_to_pdf(
     html: str = Body(..., embed=True),

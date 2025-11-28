@@ -1,0 +1,66 @@
+# -------------------------------------
+# Python
+# -------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.cache
+*.egg-info/
+.eggs/
+dist/
+build/
+*.log
+
+# Virtual environments
+venv/
+.env/
+.envrc
+.python-version
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# -------------------------------------
+# FastAPI / Uvicorn / Temp files
+# -------------------------------------
+*.pid
+*.db
+*.sqlite3
+.coverage
+coverage/
+htmlcov/
+tmp/
+temp/
+*.tmp
+
+# WeasyPrint temp files
+*.pdf~
+*.pdf-temp
+.weasyprint-cache/
+
+# -------------------------------------
+# Docker
+# -------------------------------------
+# Ignore local-only Docker artifacts
+docker-compose.override.yml
+docker-data/
+*.tar
+*.img
+
+# -------------------------------------
+# Editor cruft
+# -------------------------------------
+*.swp
+*.swo
+.DS_Store
+.idea/
+.vscode/
+*.code-workspace
+
+# -------------------------------------
+# OS files
+# -------------------------------------
+Thumbs.db
+
